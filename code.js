@@ -13,7 +13,7 @@ document.getElementsByClassName("tools")[1].remove();
 var img = [document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img")];
 for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").appendChild(img[i]);}
 for (i=1;i<6;i++) {img[i].src="https://i.imgur.com/azE4MXq.png";} img[0].src="https://i.imgur.com/hwpPFom.png";
-for (i=0;i<6;i++) {img[i].style="position:absolute; z-index:1000; pointer-events:none;";}
+for (i=0;i<6;i++) {img[i].style="position:absolute; z-index:1000; pointer-events:none; opacity:50%;";}
 for (i=0;i<6;i++) {img[i].className="imgClass";}
 
 //MOVABLE
