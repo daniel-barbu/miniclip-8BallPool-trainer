@@ -11,4 +11,4 @@ After that, open the raw code and copy-paste it to the console of the previously
 Left, Right, Up, Down (Arrow Keys): move the red circle.  
 0 (Numpad): commute between 2px and 10px movement.  
   
-![alt text](https://i.ibb.co/YZ1QGSD/Untitled.png)  
+![screenshot not loaded](https://i.ibb.co/YZ1QGSD/Untitled.png)  
