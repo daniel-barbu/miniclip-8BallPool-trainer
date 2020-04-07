@@ -8,5 +8,5 @@ The overlay is made for the webpage on the first line of the **code.js** file, m
 After that, open the raw code and copy-paste it to the console of the previously opened webpage.
   
 ## Controls
-Left, Right, Up, Down (Arrow Keys): move the center of the red circle.  
+Left, Right, Up, Down (Arrow Keys): move the red circle.  
 0 (Numpad): commute between 2px and 10px movement.
