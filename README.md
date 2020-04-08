@@ -5,7 +5,7 @@ Only tested on _Firefox 74.0 (64-bit)_ with a _1280x1024_ monitor. The pocket co
   
 ## Installation
 The overlay is made for the 'focus' webpage, make sure to be on [that webpage](https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/).
-After that, open the raw code and copy-paste it to the console of the previously opened webpage. This has to be done everytime.
+After that, open the raw **code-firefox.js** and copy-paste it to the console of the previously opened webpage. This has to be done everytime.
   
 ## Controls (if they stop working click above or below the game `<canvas>`)
 Left, Right, Up, Down (Arrow Keys): move the red circle.  
