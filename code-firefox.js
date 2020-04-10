@@ -38,7 +38,7 @@ function rotFct() {
 	//console.log("x:"+(x+750)+" y:"+(y+15));
 	for (i=2;i<=5;i+=3) {rot[i]=180+Math.atan((y+15-pozPocket[i][1])/(x+750-pozPocket[i][0]))*180/Math.PI;}
 	for (i=0;i<=3;i+=3) {rot[i]=0+Math.atan((y+15-pozPocket[i][1])/(x+750-pozPocket[i][0]))*180/Math.PI;}
-	if (x+750>=577) {var0180=0;} else {var0180=180;}
+	if (x+750>=pozPocket[1][0]) {var0180=0;} else {var0180=180;}
 	for (i=1;i<=4;i+=3) {rot[i]=var0180+Math.atan((y+15-pozPocket[i][1])/(x+750-pozPocket[i][0]))*180/Math.PI;}
 	for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.transform="rotate("+rot[i]+"deg)";}
 }
