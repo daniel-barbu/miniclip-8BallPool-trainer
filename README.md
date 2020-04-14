@@ -13,7 +13,9 @@ After that, open the raw **code-firefox.js** and copy-paste it to the console of
 
 |⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀key|⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀use|
 | :------------- |:--------------|
-| Left, Right, Up, Down (Arrow Keys)      | movement |
+| Left, Right, Up, Down
+(Arrow Keys)      | movem
+ent |
 | 0 (Numpad)      | changes between 2px and 10px movement |
 
 *important: if the controls stop working click above or below the game `<canvas>`*
