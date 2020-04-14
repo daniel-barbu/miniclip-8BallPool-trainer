@@ -8,17 +8,16 @@ The overlay is made for the 'focus' webpage, make sure to be on [that webpage](h
 After that, open the raw **code-firefox.js** and copy-paste it to the console of the previously opened webpage. This has to be done everytime.
 
 ### Controls
-| Left, Right, Up, Down (Arrow Keys) | move the red circle |
-| 0 (Numpad) | commute between 2px and 10px movement |
 
-|⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀key|⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀use|
-| :------------- |:--------------|
-| Left, Right, Up, Down
-(Arrow Keys)      | movem
-ent |
-| 0 (Numpad)      | changes between 2px and 10px movement |
+|⠀Left, Right, Up, Down (Arrow Keys)⠀|⠀move the red circle⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀|  
+|⠀0 (Numpad)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀|⠀commute between 2px and 10px movement⠀|
 
-*important: if the controls stop working click above or below the game `<canvas>`*
+|                                   |          |
+|:----------------------------------|:---------|
+| Left, Right, Up, Down(Arrow Keys) | movement |
+| 0 (Numpad)                        | changes between 2px and 10px movement |
+
+*!important: if the controls stop working click above or below the game `<canvas>`*
 
 ### Screenshot
 ![screenshot not loaded](https://i.ibb.co/YZ1QGSD/Untitled.png)  
