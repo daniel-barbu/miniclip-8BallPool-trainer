@@ -12,7 +12,7 @@ This has to be done everytime you open the game. However, it might be possible t
 ### Controls
 |                                   |          |
 |:----------------------------------|:---------|
-| Left, Right, Up, Down(Arrow Keys) | movement |
+| ←, ↑, →, ↓ (Arrow Keys) | movement |
 | 0 (Numpad)                        | changes between 2px and 10px movement |
 
 *important: if the controls stop working click above or below the game `<canvas>`*
