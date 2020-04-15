@@ -3,7 +3,7 @@ This is a HTML overlay that can help you train your aim on Miniclip's 8 Ball Poo
 
 Only tested on _Firefox 74.0 (64-bit)_ with a _1280x1024_ monitor. The pocket coordinates are in pixels, thus if it is used with a different resolution monitor the easiest way would be to **change the resolution** from inside the operating system to 1280x1024 **or** to the **change the coordinates** from inside the code (the pozPocket array).
 
-### Installation
+### How to use
 1. The overlay is made for the ['focus' webpage](https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/) of the game, so make sure to be on that webpage.
 2. Open the [raw `code-firefox.js`](https://raw.githubusercontent.com/daniel-barbu/8-Ball-Pool-trainer/master/code-firefox.js) and copy-paste all the code to the console of the previously opened webpage.
 
