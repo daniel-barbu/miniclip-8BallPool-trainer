@@ -1,4 +1,4 @@
-# 8-Ball-Pool-trainer
+# miniclip-8BallPool-trainer
 This is a HTML overlay that can help you train your aim on Miniclip's 8 Ball Pool game.
 
 Only tested on _Firefox 74.0 (64-bit)_ with a _1280x1024_ monitor. The pocket coordinates are in pixels, thus if it is used with a different resolution monitor the easiest way would be to **change the resolution** from inside the operating system to 1280x1024 **or** to the **change the coordinates** from inside the code (the pozPocket array).
