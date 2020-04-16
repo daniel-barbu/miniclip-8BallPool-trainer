@@ -3,7 +3,7 @@ This is a HTML overlay that can help you train your aim on Miniclip's 8 Ball Poo
 
 ### How to use
 1. The overlay is made for the ['focus' webpage](https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/) of the game, so make sure to be on that webpage.
-2. Open the [raw `code-firefox.js`](https://raw.githubusercontent.com/daniel-barbu/8-Ball-Pool-trainer/master/code-firefox.js) and copy-paste all the code to the console of the previously opened webpage.
+2. Open [`code-firefox.js`](https://raw.githubusercontent.com/daniel-barbu/8-Ball-Pool-trainer/master/code-firefox.js) and copy-paste  the code to the console of the previously opened webpage.
 
 This has to be done everytime you open the game. However, it might be possible to use an add-on like [Tampermonkey](https://www.tampermonkey.net/) to automate this process.
 
