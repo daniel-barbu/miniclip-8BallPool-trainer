@@ -15,7 +15,7 @@ This is a HTML overlay that can help you train your aim on Miniclip's 8 Ball Poo
 |                                   |          |
 |:----------------------------------|:---------|
 | ←, ↑, →, ↓ (Arrow Keys) | movement |
-| 0 (Numpad)                        | changes between 2px and 10px movement |
+| 0 (Numpad)                        | changes between 1px and 10px movement |
 
 *important: if the controls stop working click above or below the game `<canvas>`*
 
