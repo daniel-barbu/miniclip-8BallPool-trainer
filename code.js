@@ -20,7 +20,7 @@ for (i=0;i<6;i++) {img[i].src="https://i.imgur.com/YbY8j7o.png";
 		   img[i].style="position:absolute; z-index:1000; pointer-events:none; opacity:0.6;";
 		   img[i].className="imgClass";
 		   document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").appendChild(img[i]);}
-img[0].src="https://i.imgur.com/i5WD61N.png";
+img[0].src="https://i.imgur.com/GUdsaRP.png";
 
 //ROTATEABLE
 var rot=[0,0,0,0,0,0];
@@ -38,14 +38,14 @@ function rotFct() {
 //MOVABLE
 var x=0,y=pozPocket[1][1]+50,m=10;
 $(document).keydown(function(event){//0numpad, arrowKeys(left, up, right, down)
-	if (event.which==96) {if (m==10) m=2; else m=10;}
+	if (event.which==96) {if (m==10) m=1; else m=10;}
 	else if (event.which==37) x-=m;
 	else if (event.which==38) y-=m;
 	else if (event.which==39) x+=m;
 	else if (event.which==40) y+=m;
 	for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.left = x+"px"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.top = y+"px";}
 	if (x+750<pozPocket[0][0]-20 || x+750>pozPocket[2][0]+20 || y+15<pozPocket[1][1]-20 || y+15>pozPocket[4][1]+20) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/6frNp73.png"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].style.transform="rotate(0deg)"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="hidden";}
-	else {rotFct(); document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/i5WD61N.png"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="visible";}	
+	else {rotFct(); document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/GUdsaRP.png"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="visible";}	
 });
 
 for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.left = x+"px"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.top = y+"px";}
