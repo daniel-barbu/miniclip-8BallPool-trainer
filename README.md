@@ -20,4 +20,4 @@ This is a HTML overlay that can help you train your aim on Miniclip's 8 Ball Poo
 *important: if the controls stop working click above or below the game `<canvas>`*
 
 ### Screenshot
-![screenshot not loaded correctly](/screenshot.png)
+![screenshot.png not loaded correctly](/screenshot.png)
