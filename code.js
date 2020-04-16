@@ -6,8 +6,8 @@ if (!(window.location.href.includes("miniclip.com/games/8-ball-pool-multiplayer/
 }
 
 //center, zoom & remove unnecessary
-document.getElementById("game-container").style="padding-left:10%; padding-top:11%; -webkit-transform:scale(1.3); -moz-transform:scale(1.3);";
-document.body.style.overflow="hidden";
+//document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").style="padding:12.5%; -webkit-transform:scale(1.2); -moz-transform:scale(1.2);";
+//document.body.style.overflow="hidden";
 document.getElementsByClassName("sky-wrapper")[0].remove();
 document.getElementById("site-header").remove();
 document.getElementById("pool-menu-after").remove();
