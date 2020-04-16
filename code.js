@@ -16,7 +16,7 @@ document.getElementsByClassName("tools")[1].remove();
 
 //LINES(6)
 var img = [document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img")];
-for (i=0;i<6;i++) {img[i].src="https://i.imgur.com/lMfflQU.png";
+for (i=0;i<6;i++) {img[i].src="https://i.imgur.com/8kYzmkl.png";
 		   img[i].style="position:absolute; z-index:1000; pointer-events:none; opacity:0.6;";
 		   img[i].className="imgClass";
 		   document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").appendChild(img[i]);}
