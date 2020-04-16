@@ -20,4 +20,4 @@ This has to be done everytime you open the game. However, it might be possible t
 *important: if the controls stop working click above or below the game `<canvas>`*
 
 ### Screenshot
-![screenshot not loaded](/screenshot.png)
+![screenshot not loaded correctly](/screenshot.png)
