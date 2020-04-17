@@ -14,7 +14,6 @@ Also has the zoom capabilities of [miniclip-8BallPool-maximizer](https://github.
 |                                   |          |
 |:----------------------------------|:---------|
 | ←, ↑, →, ↓ (Arrow Keys)           | movement |
-| +, - (Numpad)                     | zoom     |
 | 0 (Numpad)                        | 1px/10px |
 
 
