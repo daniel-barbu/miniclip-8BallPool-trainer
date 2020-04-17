@@ -5,7 +5,7 @@ if (!(window.location.href.includes("miniclip.com/games/8-ball-pool-multiplayer/
   }
 }
 
-//miniclip-8BallPool-maximizer
+//miniclip-8BallPool-maximizer(remove unnecessary, zoom & center)
 document.getElementsByClassName("sky-wrapper")[0].remove();
 document.getElementById("site-header").remove();
 document.getElementById("pool-menu-after").remove();
