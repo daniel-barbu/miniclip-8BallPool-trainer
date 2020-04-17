@@ -17,9 +17,7 @@ document.getElementById("game-embed").style.width=window.innerWidth+"px";
 document.getElementsByClassName("expert-game")[0].style="padding-right:0;"
 window.scrollTo(0,0);
 document.body.style.overflow="hidden";
-document.getElementById("game-container").style="margin:0 !important; transform-origin:center 0px; transform:scale("+Math.min(
-	window.outerWidth/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.width.replace("px",""), 
-	(window.outerHeight-screen.height*0.09)/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.height.replace("px",""))+");";
+document.getElementById("game-container").style="margin:0 !important; transform-origin:center 0px; transform:scale("+Math.min(window.outerWidth/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.width.replace("px",""), (window.outerHeight-screen.height*0.09)/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.height.replace("px",""))+");";
 
 if (window.outerWidth/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.width.replace("px","")>(window.outerHeight-100)/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.height.replace("px",""))
 	document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.margin="auto";
