@@ -5,14 +5,24 @@ if (!(window.location.href.includes("miniclip.com/games/8-ball-pool-multiplayer/
   	}
 }
 
-//center, zoom & remove unnecessary
-//document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").style="padding:12.5%; -webkit-transform:scale(1.2); -moz-transform:scale(1.2);";
-//document.body.style.overflow="hidden";
+//zoom & remove unnecessary
 document.getElementsByClassName("sky-wrapper")[0].remove();
 document.getElementById("site-header").remove();
 document.getElementById("pool-menu-after").remove();
 document.getElementsByClassName("tools")[0].remove();
 document.getElementsByClassName("tools")[1].remove();
+
+document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").style+="zoom:scale(1.4);";
+document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.margin="0px";
+//document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.height=window.height/1.215+"px";
+document.getElementById("game-embed").style.height=screen.height-20+"px"
+document.getElementById("game-embed").style.width=screen.width-20+"px"
+document.getElementById("game-container").style="margin:0;"
+document.getElementsByClassName("expert-game")[0].style="padding-right:0;"
+document.body.style.overflow="hidden";
+
+document.getElementById("game-container").style="transform-origin:0px 0px !important; transform:scale(1.42) !important;";
+
 
 //LINES(6)
 var img = [document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img")];
@@ -37,8 +47,10 @@ function rotFct() {
 
 //MOVABLE
 var x=0,y=pozPocket[1][1]+50,m=10;
-$(document).keydown(function(event){//0numpad, arrowKeys(left, up, right, down)
+$(document).keydown(function(event){//0numpad, +numpad, -numpad, arrowKeys(left, up, right, down)
 	if (event.which==96) {if (m==10) m=1; else m=10;}
+	else if (event.which==107) ;
+	else if (event.which==109) ;
 	else if (event.which==37) x-=m;
 	else if (event.which==38) y-=m;
 	else if (event.which==39) x+=m;
