@@ -5,7 +5,7 @@ if (!(window.location.href.includes("miniclip.com/games/8-ball-pool-multiplayer/
   }
 }
 
-//remove unnecessary, zoom & center
+//miniclip-8BallPool-maximizer
 document.getElementsByClassName("sky-wrapper")[0].remove();
 document.getElementById("site-header").remove();
 document.getElementById("pool-menu-after").remove();
@@ -43,16 +43,13 @@ function rotFct() {
 }
 
 //MOVABLE
-var x=0,y=pozPocket[1][1]+50,m=10,zoom=1;
-$(document).keydown(function(event){ //0numpad, +numpad, -numpad, arrowKeys(left, up, right, down)
+var x=0,y=pozPocket[1][1]+50,m=10;
+$(document).keydown(function(event){ //0numpad, arrowKeys(left, up, right, down)
 	if (event.which==96) {if (m==10) m=1; else m=10;}
-	else if (event.which==107) zoom+=m/100;
-	else if (event.which==109) zoom-=m/100;
 	else if (event.which==37) x-=m;
 	else if (event.which==38) y-=m;
 	else if (event.which==39) x+=m;
 	else if (event.which==40) y+=m;
-	document.getElementById("game-container").style="transform-origin:0px 0px !important; transform:scale("+zoom+") !important;";
 	for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.left = x+"px"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.top = y+"px";}
 	if (x+134<pozPocket[0][0]-20 || x+134>pozPocket[2][0]+20 || y+14<pozPocket[1][1]-20 || y+14>pozPocket[4][1]+20) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/PrVJdEe.png"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].style.transform="rotate(0deg)"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="hidden";}
 	else {rotFct(); document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/ZR6HKLB.png"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="visible";}	
