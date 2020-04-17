@@ -1,8 +1,8 @@
 //WEBPAGE: https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/
 if (!(window.location.href.includes("miniclip.com/games/8-ball-pool-multiplayer/en/focus"))) {
-	if (confirm("The overlay is made for the 'focus' webpage of the game, would you like to be redirected there?")) {
-    		window.open("https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/");
-  	}
+  if (confirm("The overlay is made for the 'focus' webpage of the game, would you like to be redirected there?")) {
+    window.open("https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/");
+  }
 }
 
 //zoom & remove unnecessary
@@ -11,6 +11,11 @@ document.getElementById("site-header").remove();
 document.getElementById("pool-menu-after").remove();
 document.getElementsByClassName("tools")[0].remove();
 document.getElementsByClassName("tools")[1].remove();
+
+document.getElementById("game-container").style="transform-origin:0px 0px; transform:scale("+Math.min(
+  window.innerWidth/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.width.replace("px",""), 
+  window.innerWidth/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.height.replace("px",""))+");";
+
 document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.margin="0px";
 document.getElementById("game-embed").style.height=screen.height-20+"px"
 document.getElementById("game-embed").style.width=screen.width-20+"px"
@@ -21,9 +26,9 @@ document.body.style.overflow="hidden";
 //LINES(6)
 var img = [document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img")];
 for (i=0;i<6;i++) {img[i].src="https://i.imgur.com/xw6JgO4.png";
-		   img[i].style="position:absolute; z-index:1000; pointer-events:none; opacity:0.6;";
-		   img[i].className="imgClass";
-		   document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").appendChild(img[i]);}
+	            	   img[i].style="position:absolute; z-index:1000; pointer-events:none; opacity:0.6;";
+		               img[i].className="imgClass";
+		               document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").appendChild(img[i]);}
 img[0].src="https://i.imgur.com/ZR6HKLB.png";
 
 //ROTATEABLE
@@ -41,7 +46,6 @@ function rotFct() {
 //MOVABLE
 var x=0,y=pozPocket[1][1]+50,m=10,zoom=1;
 $(document).keydown(function(event){ //0numpad, +numpad, -numpad, arrowKeys(left, up, right, down)
-	console.log(event.which);
 	if (event.which==96) {if (m==10) m=1; else m=10;}
 	else if (event.which==107) zoom+=m/100;
 	else if (event.which==109) zoom-=m/100;
@@ -53,7 +57,7 @@ $(document).keydown(function(event){ //0numpad, +numpad, -numpad, arrowKeys(left
 	for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.left = x+"px"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.top = y+"px";}
 	if (x+134<pozPocket[0][0]-20 || x+134>pozPocket[2][0]+20 || y+14<pozPocket[1][1]-20 || y+14>pozPocket[4][1]+20) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/PrVJdEe.png"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].style.transform="rotate(0deg)"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="hidden";}
 	else {rotFct(); document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/ZR6HKLB.png"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="visible";}	
-	console.log("x:"+(x+134)+" y:"+(y+14));
+	//console.log("x:"+(x+134)+" y:"+(y+14));
 });
 
 for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.left = x+"px"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.top = y+"px";}
