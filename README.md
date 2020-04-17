@@ -17,7 +17,7 @@ Also has the zoom capabilities of [miniclip-8BallPool-maximizer](https://github.
 | 0 (Numpad)                        | 1px/10px |
 
 
-*important: if the controls stop working click above or below the game `<canvas>`*
+*important: if the controls stop working click below the game `<canvas>`*
 
 ### Screenshot
 ![screenshot.png not loaded correctly](/screenshot.png)
