@@ -11,53 +11,49 @@ document.getElementById("site-header").remove();
 document.getElementById("pool-menu-after").remove();
 document.getElementsByClassName("tools")[0].remove();
 document.getElementsByClassName("tools")[1].remove();
-
-document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").style+="zoom:scale(1.4);";
 document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.margin="0px";
-//document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.height=window.height/1.215+"px";
 document.getElementById("game-embed").style.height=screen.height-20+"px"
 document.getElementById("game-embed").style.width=screen.width-20+"px"
 document.getElementById("game-container").style="margin:0;"
 document.getElementsByClassName("expert-game")[0].style="padding-right:0;"
 document.body.style.overflow="hidden";
 
-document.getElementById("game-container").style="transform-origin:0px 0px !important; transform:scale(1.42) !important;";
-
-
 //LINES(6)
 var img = [document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img"),document.createElement("img")];
-for (i=0;i<6;i++) {img[i].src="https://i.imgur.com/8kYzmkl.png";
+for (i=0;i<6;i++) {img[i].src="https://i.imgur.com/xw6JgO4.png";
 		   img[i].style="position:absolute; z-index:1000; pointer-events:none; opacity:0.6;";
 		   img[i].className="imgClass";
 		   document.getElementById("iframe-game").contentWindow.document.getElementById("canvas-container").appendChild(img[i]);}
-img[0].src="https://i.imgur.com/GUdsaRP.png";
+img[0].src="https://i.imgur.com/ZR6HKLB.png";
 
 //ROTATEABLE
 var rot=[0,0,0,0,0,0];
 var pozPocket=[[169,259],[577,243],[985,259],[169,652],[577,668],[985,652]];
 var var0180;
 function rotFct() {
-	//console.log("x:"+(x+750)+" y:"+(y+15)); //display current position
-	for (i=0;i<=3;i+=3) {rot[i]=0+Math.atan((y+15-pozPocket[i][1])/(x+750-pozPocket[i][0]))*180/Math.PI;}
-	for (i=2;i<=5;i+=3) {rot[i]=180+Math.atan((y+15-pozPocket[i][1])/(x+750-pozPocket[i][0]))*180/Math.PI;}
-	if (x+750>=pozPocket[1][0]) {var0180=0;} else {var0180=180;}
-	for (i=1;i<=4;i+=3) {rot[i]=var0180+Math.atan((y+15-pozPocket[i][1])/(x+750-pozPocket[i][0]))*180/Math.PI;}
+	for (i=0;i<=3;i+=3) {rot[i]=0+Math.atan((y+14-pozPocket[i][1])/(x+134-pozPocket[i][0]))*180/Math.PI;}
+	for (i=2;i<=5;i+=3) {rot[i]=180+Math.atan((y+14-pozPocket[i][1])/(x+134-pozPocket[i][0]))*180/Math.PI;}
+	if (x+134>=pozPocket[1][0]) {var0180=0;} else {var0180=180;}
+	for (i=1;i<=4;i+=3) {rot[i]=var0180+Math.atan((y+14-pozPocket[i][1])/(x+134-pozPocket[i][0]))*180/Math.PI;}
 	for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.transform="rotate("+rot[i]+"deg)";}
 }
 
 //MOVABLE
-var x=0,y=pozPocket[1][1]+50,m=10;
-$(document).keydown(function(event){//0numpad, +numpad, -numpad, arrowKeys(left, up, right, down)
+var x=0,y=pozPocket[1][1]+50,m=10,zoom=1;
+$(document).keydown(function(event){ //0numpad, +numpad, -numpad, arrowKeys(left, up, right, down)
+	console.log(event.which);
 	if (event.which==96) {if (m==10) m=1; else m=10;}
-	else if (event.which==107) ;
-	else if (event.which==109) ;
+	else if (event.which==107) zoom+=m/100;
+	else if (event.which==109) zoom-=m/100;
 	else if (event.which==37) x-=m;
 	else if (event.which==38) y-=m;
 	else if (event.which==39) x+=m;
 	else if (event.which==40) y+=m;
+	document.getElementById("game-container").style="transform-origin:0px 0px !important; transform:scale("+zoom+") !important;";
 	for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.left = x+"px"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.top = y+"px";}
-	if (x+750<pozPocket[0][0]-20 || x+750>pozPocket[2][0]+20 || y+15<pozPocket[1][1]-20 || y+15>pozPocket[4][1]+20) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/6frNp73.png"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].style.transform="rotate(0deg)"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="hidden";}
-	else {rotFct(); document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/GUdsaRP.png"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="visible";}	
+	if (x+134<pozPocket[0][0]-20 || x+134>pozPocket[2][0]+20 || y+14<pozPocket[1][1]-20 || y+14>pozPocket[4][1]+20) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/PrVJdEe.png"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].style.transform="rotate(0deg)"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="hidden";}
+	else {rotFct(); document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[0].src="https://i.imgur.com/ZR6HKLB.png"; for (i=1;i<6;i++) document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.visibility="visible";}	
+	console.log("x:"+(x+134)+" y:"+(y+14));
 });
 
 for (i=0;i<6;i++) {document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.left = x+"px"; document.getElementById("iframe-game").contentWindow.document.getElementsByClassName("imgClass")[i].style.top = y+"px";}
