@@ -17,7 +17,7 @@ document.getElementById("game-embed").style.height=window.innerHeight+"px";
 document.getElementById("game-embed").style.width=window.innerWidth+"px";
 document.getElementsByClassName("expert-game")[0].style="padding-right:0;"
 document.body.style.overflow="hidden";
-document.getElementById("game-container").style="margin:0 !important; transform-origin:0px 0px; transform:scale("+Math.min(
+document.getElementById("game-container").style="margin:0 !important; transform-origin:center 0px; transform:scale("+Math.min(
 	window.outerWidth/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.width.replace("px",""), 
 	(window.outerHeight-100)/document.getElementById("iframe-game").contentWindow.document.getElementById("container").style.height.replace("px",""))+");";
 
