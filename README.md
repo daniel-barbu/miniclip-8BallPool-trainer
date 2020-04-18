@@ -7,7 +7,8 @@ Also has the zoom capabilities of [miniclip-8BallPool-maximizer](https://github.
 2. Open [`code.js`](https://raw.githubusercontent.com/daniel-barbu/8-Ball-Pool-trainer/master/code.js) and copy-paste the code to the console of the previously opened webpage, after the game loads.
 
 ### Known Issues
-1. You have to copy-paste the code to the console eveytime you want to play. It might be possible to use an add-on like [Tampermonkey](https://www.tampermonkey.net/) to automate this process.
+1. You have to copy-paste the code to the console eveytime you want to play.  
+   It might be possible to use an extension/add-on like [Tampermonkey](https://www.tampermonkey.net/) to automate this process.
 
 ### Controls
 |                                   |          |
