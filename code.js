@@ -43,7 +43,7 @@ function rotFct() {
 }
 
 //MOVABLE
-var x=0,y=pozPocket[1][1]+50,m=10;
+var x=0,y=pozPocket[1][1]+200,m=10;
 $(document).keydown(function(event){ //0numpad, arrowKeys(left, up, right, down)
 	if (event.which==96) {if (m==10) m=1; else m=10;}
 	else if (event.which==37) x-=m;
