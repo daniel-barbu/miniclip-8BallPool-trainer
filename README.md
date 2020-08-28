@@ -8,7 +8,7 @@ Also has the zoom capabilities and performance boost of [miniclip-8BallPool-maxi
 
 ### Known Issues
 1. You have to copy-paste the code to the console eveytime you want to play.  
-   It might be possible to use an extension/add-on like [Tampermonkey](https://www.tampermonkey.net/) to automate this process.
+   It might be possible to use an extension/add-on like [Tampermonkey](https://www.tampermonkey.net/)/[Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) to automate this process.
 
 ### Controls
 |                                   |          |
