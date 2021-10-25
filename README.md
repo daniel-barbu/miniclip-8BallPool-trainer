@@ -3,8 +3,9 @@ miniclip-8BallPool-trainer is a HTML overlay that can help you train your aim on
 Also has the zoom capabilities and performance boost of [miniclip-8BallPool-maximizer](https://github.com/daniel-barbu/miniclip-8BallPool-maximizer).
 
 ### How to use
-1. The overlay is made for the ['focus' webpage](https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/) of the game, so make sure to be on that webpage and to disable your adblocker.
-2. After the game loads, open [`code.js`](https://raw.githubusercontent.com/daniel-barbu/8-Ball-Pool-trainer/master/code.js) and copy-paste the code to the console while the `<body>` tag is selected.
+1. Set your screen resolution to 1280x1024.
+2. The overlay is made for the ['focus' webpage](https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/) of the game, so make sure to be on that webpage and to disable your adblocker.
+3. After the game loads, open [`code.js`](https://raw.githubusercontent.com/daniel-barbu/8-Ball-Pool-trainer/master/code.js) and copy-paste the code to the console while the `<body>` tag is selected.
 
 ### Known Issues
 1. Your screen resolution has to be set to 1280x1024.
