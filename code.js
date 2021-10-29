@@ -1,9 +1,9 @@
-//WEBPAGE: https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/
+/* WEBPAGE: https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/
 if (!(window.location.href.includes("miniclip.com/games/8-ball-pool-multiplayer/en/focus"))) {
   if (confirm("The overlay is made for the 'focus' webpage of the game, would you like to be redirected there?")) {
     window.open("https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/");
   }
-}
+} */
 
 //miniclip-8BallPool-maximizer(remove unnecessary, zoom & center)
 document.getElementsByClassName("sky-wrapper")[0].remove();
