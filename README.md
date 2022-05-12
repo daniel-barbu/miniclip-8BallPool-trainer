@@ -5,7 +5,7 @@ Also has the zoom capabilities and performance boost of [miniclip-8BallPool-maxi
 ### How to use
 1. Set your screen resolution to 1280x1024.
 2. The overlay is made for the ['focus' webpage](https://www.miniclip.com/games/8-ball-pool-multiplayer/en/focus/) of the game, so make sure to be on that webpage and to disable your adblocker.
-3. After the game loads, open [`code.js`](https://raw.githubusercontent.com/daniel-barbu/8-Ball-Pool-trainer/master/code.js) and copy-paste the code to the console while the `<body>` tag is selected.
+3. After the game loads, open [`code.js`](https://raw.githubusercontent.com/daniel-barbu/8-Ball-Pool-trainer/master/code.js) and copy-paste the code to the console while the `<iframe>` tag is selected.
 
 ### Known Issues
 1. Your screen resolution has to be set to 1280x1024.
